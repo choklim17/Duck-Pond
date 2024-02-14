@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Duck Pond"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Start Game Button -->
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- How to Play Button -->
+    <Button
+        android:id="@+id/btn_instructions"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="How to Play"
+        app:layout_constraintEnd_toEndOf="@+id/btn_start"
+        app:layout_constraintStart_toStartOf="@+id/btn_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_start" />
+
+    <!-- Exit Game Button -->
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Exit Game"
+        app:layout_constraintEnd_toEndOf="@+id/btn_instructions"
+        app:layout_constraintStart_toStartOf="@+id/btn_instructions"
+        app:layout_constraintTop_toBottomOf="@+id/btn_instructions" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

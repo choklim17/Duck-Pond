@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructionsActivity">
+
+    <!-- Title/Header -->
+    <TextView
+        android:id="@+id/txt_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="How to Play"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Objective -->
+    <TextView
+        android:id="@+id/txt_objective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="1. Objective:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_instructions"
+        app:layout_constraintTop_toBottomOf="@+id/txt_instructions" />
+
+    <!-- Objective contents -->
+    <TextView
+        android:id="@+id/txt_objectiveString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Objective goes here"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txt_objective"
+        app:layout_constraintTop_toBottomOf="@+id/txt_objective" />
+
+    <!-- Selecting Ducks -->
+    <TextView
+        android:id="@+id/txt_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2. Selecting Ducks:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_objective"
+        app:layout_constraintTop_toBottomOf="@+id/txt_objectiveString" />
+
+    <!-- Selecting Ducks contents -->
+    <TextView
+        android:id="@+id/txt_selectingDucks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Selecting Ducks goes here"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_select"
+        app:layout_constraintTop_toBottomOf="@+id/txt_select" />
+
+    <!-- Revealing Prizes -->
+    <TextView
+        android:id="@+id/txt_prizes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="3. Revealing Prizes:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_select"
+        app:layout_constraintTop_toBottomOf="@+id/txt_selectingDucks" />
+
+    <!-- Revealing Prizes contents -->
+    <TextView
+        android:id="@+id/txt_revealingPrizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Revealing Prizes goes here"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_prizes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_prizes" />
+
+    <!-- Prize Types -->
+    <TextView
+        android:id="@+id/txt_prizeTypes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="4. Prize Types:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_prizes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_revealingPrizes" />
+
+    <!-- Prize Types contents -->
+    <TextView
+        android:id="@+id/txt_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Prize Types goes here"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_prizeTypes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_prizeTypes" />
+
+    <!-- End of Round -->
+    <TextView
+        android:id="@+id/txt_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="5. End of Round:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txt_prizeTypes"
+        app:layout_constraintTop_toBottomOf="@+id/txt_types" />
+
+    <!-- End of Round contents -->
+    <TextView
+        android:id="@+id/txt_endOfRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="End of Round goes here"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_end"
+        app:layout_constraintTop_toBottomOf="@+id/txt_end" />
+
+    <!-- Go back to Main Menu Button -->
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

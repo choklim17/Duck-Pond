@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".GameActivity">
+
+    <!-- Duck Image 1 -->
+    <ImageView
+        android:id="@+id/img_duck1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Duck Image 2 -->
+    <ImageView
+        android:id="@+id/img_duck2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_duck1" />
+
+    <!-- Duck Image 3 -->
+    <ImageView
+        android:id="@+id/img_duck3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_duck2" />
+
+    <!-- Duck Image 4 -->
+    <ImageView
+        android:id="@+id/img_duck4"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_duck3" />
+
+    <!-- Duck Image 5 -->
+    <ImageView
+        android:id="@+id/img_duck5"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_duck4" />
+
+    <!-- Duck Image 6 -->
+    <ImageView
+        android:id="@+id/img_duck6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_duck5" />
+
+    <!-- Duck Image 7 -->
+    <ImageView
+        android:id="@+id/img_duck7"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_duck6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Choose 3 Ducks"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
